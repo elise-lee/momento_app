@@ -32,23 +32,18 @@ class NoMoreCards extends React.Component {
 }
 
 const cards = [
-  {name: '1', image: 'https://media.giphy.com/media/GfXFVHUzjlbOg/giphy.gif'},
-  {name: '2', image: 'https://media.giphy.com/media/irTuv1L1T34TC/giphy.gif'},
-  {name: '3', image: 'https://media.giphy.com/media/LkLL0HJerdXMI/giphy.gif'},
-  {name: '4', image: 'https://media.giphy.com/media/fFBmUMzFL5zRS/giphy.gif'},
-  {name: '5', image: 'https://media.giphy.com/media/oDLDbBgf0dkis/giphy.gif'},
-  {name: '6', image: 'https://media.giphy.com/media/7r4g8V2UkBUcw/giphy.gif'},
-  {name: '7', image: 'https://media.giphy.com/media/K6Q7ZCdLy8pCE/giphy.gif'},
-  {name: '8', image: 'https://media.giphy.com/media/hEwST9KM0UGti/giphy.gif'},
-  {name: '9', image: 'https://media.giphy.com/media/3oEduJbDtIuA2VrtS0/giphy.gif'},
+  {name: '1', image: 'https://www.essence.com/wp-content/uploads/2018/06/image/2017/11/main/beyonce-tout_0-1472x1472.jpg'},
+  {name: '2', image: 'https://cdn.lifehack.org/wp-content/uploads/2015/02/what-makes-people-happy.jpeg'},
+  {name: '3', image: 'https://pmcvariety.files.wordpress.com/2018/04/dwayne-johnson-poll.jpg?w=1000'},
+  {name: '4', image: 'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1078084172%2F960x0.jpg%3Ffit%3Dscale'},
+  {name: '5', image: 'https://s.hdnux.com/photos/51/23/24/10827008/3/920x920.jpg'},
+  {name: '6', image: 'https://s.hdnux.com/photos/26/44/37/5916641/3/900x900.jpg'},
+  {name: '7', image: 'https://s.hdnux.com/photos/26/61/12/5968559/3/900x900.jpg'},
+  {name: '8', image: 'https://s.hdnux.com/photos/26/00/02/5767305/25/900x900.jpg'},
+  {name: '9', image: 'https://imgix.ranker.com/user_node_img/24/463523/original/angelina-jolie-photo-u496?w=650&q=50&fm=pjpg&fit=crop&crop=faces'}
 ]
 
-const cards2 = [
-  {name: '10', image: 'https://media.giphy.com/media/12b3E4U9aSndxC/giphy.gif'},
-  {name: '11', image: 'https://media4.giphy.com/media/6csVEPEmHWhWg/200.gif'},
-  {name: '12', image: 'https://media4.giphy.com/media/AA69fOAMCPa4o/200.gif'},
-  {name: '13', image: 'https://media.giphy.com/media/OVHFny0I7njuU/giphy.gif'},
-]
+const cards2 = []
 
 export default class HomeScreen extends React.Component {
   constructor(props) {
@@ -61,13 +56,15 @@ export default class HomeScreen extends React.Component {
   }
 
   handleYup = card => {
+    console.log("yup")
     this.setState({isDialogVisible: true});
   }
 
-  handleNope (card) {
+  handleNope = card => {
     console.log("nope")
   }
 
+  // Not currently used -- useful if we want to have a "backup" deck of cards
   cardRemoved (index) {
     console.log(`The index is ${index}`);
 
@@ -114,7 +111,6 @@ export default class HomeScreen extends React.Component {
 
           handleYup={this.handleYup}
           handleNope={this.handleNope}
-          cardRemoved={this.cardRemoved.bind(this)}
         />
         <DialogInput isDialogVisible={this.state.isDialogVisible}
             title={"Great!"}
