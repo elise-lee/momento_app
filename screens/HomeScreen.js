@@ -32,15 +32,10 @@ class NoMoreCards extends React.Component {
 }
 
 const cards = [
-  {name: '1', image: 'https://www.essence.com/wp-content/uploads/2018/06/image/2017/11/main/beyonce-tout_0-1472x1472.jpg'},
-  {name: '2', image: 'https://cdn.lifehack.org/wp-content/uploads/2015/02/what-makes-people-happy.jpeg'},
-  {name: '3', image: 'https://pmcvariety.files.wordpress.com/2018/04/dwayne-johnson-poll.jpg?w=1000'},
-  {name: '4', image: 'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1078084172%2F960x0.jpg%3Ffit%3Dscale'},
-  {name: '5', image: 'https://s.hdnux.com/photos/51/23/24/10827008/3/920x920.jpg'},
-  {name: '6', image: 'https://s.hdnux.com/photos/26/44/37/5916641/3/900x900.jpg'},
-  {name: '7', image: 'https://s.hdnux.com/photos/26/61/12/5968559/3/900x900.jpg'},
-  {name: '8', image: 'https://s.hdnux.com/photos/26/00/02/5767305/25/900x900.jpg'},
-  {name: '9', image: 'https://imgix.ranker.com/user_node_img/24/463523/original/angelina-jolie-photo-u496?w=650&q=50&fm=pjpg&fit=crop&crop=faces'}
+  {name: '1', image: 'https://s.hdnux.com/photos/51/23/24/10827008/3/920x920.jpg'},
+  {name: '2', image: 'https://s.hdnux.com/photos/26/44/37/5916641/3/900x900.jpg'},
+  {name: '3', image: 'https://s.hdnux.com/photos/26/61/12/5968559/3/900x900.jpg'},
+  {name: '4', image: 'https://s.hdnux.com/photos/26/00/02/5767305/25/900x900.jpg'},
 ]
 
 const cards2 = []
@@ -127,7 +122,7 @@ export default class HomeScreen extends React.Component {
 }
 
 HomeScreen.navigationOptions = {
-  title: 'Momento',
+  title: 'New Faces',
 };
 
 const styles = StyleSheet.create({
@@ -166,5 +161,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  }
+  },
 })

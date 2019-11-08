@@ -10,7 +10,7 @@ export default function SettingsScreen() {
 }
 
 SettingsScreen.navigationOptions = {
-  title: 'Momento',
+  title: 'Settings',
 };
 
 const styles = StyleSheet.create({
